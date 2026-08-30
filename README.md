@@ -49,9 +49,9 @@ copy .env.example .env.local
 npm run dev
 ```
 
-新增 D1 交易流水表对应迁移 `drizzle/0003_high_enchantress.sql`，账号表与会话表对应迁移 `drizzle/0004_silent_account.sql`，股票自选表对应迁移 `drizzle/0005_stock_watchlist.sql`。部署前请先执行迁移，或让服务端的 `ensurePortfolioSchema()` 完成兼容性建表；匿名数据不会被覆盖。
+新增 D1 交易流水表对应迁移 `drizzle/0003_high_enchantress.sql`，账号表与会话表对应迁移 `drizzle/0004_silent_account.sql`，股票自选表对应迁移 `drizzle/0005_stock_watchlist.sql`。本地运行时，`ensurePortfolioSchema()` 会完成兼容性建表；已有匿名数据不会被覆盖。
 
-打开 `http://localhost:3000/`。如需启用 AI 分析，可在服务端环境中直接配置 `DEEPSEEK_API_KEY`。如果服务器直连 DeepSeek 受阻，可改用自有 Cloudflare Worker，并配置完整的 `DEEPSEEK_RELAY_URL` 与独立的 `DEEPSEEK_RELAY_TOKEN`；DeepSeek Key 应只保存在 Worker 加密 Secret 中。不要把任何真实密钥或中转口令提交到 Git。
+打开 `http://localhost:3000/`。如需启用 AI 分析，请在本地 `.env.local` 配置 `DEEPSEEK_API_KEY`。如果本地网络直连 DeepSeek 受阻，也可以填写已有的 `DEEPSEEK_RELAY_URL` 与 `DEEPSEEK_RELAY_TOKEN`。不要把任何真实密钥或中转口令提交到 Git。
 
 ## 验证
 
@@ -65,6 +65,5 @@ npm test
 - 商业级全量行情、板块资金与主力资金（当前免费源已提供可识别的降级展示）
 - 完整财报、更多估值字段及更完整的基金持仓穿透
 - 管理员后台、备份与费用监控
-- 正式服务器、域名与 HTTPS
 
 > 仅供个人研究参考，不构成投资建议或交易指令。关键信息应回到公告和数据源原文核验。
