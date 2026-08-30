@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2026-08-26",
+    "macrostructure": "Decision-led research workbench",
+    "theme": "Midnight with restrained teal anchor",
+    "enrichment": "none",
+    "brief": "首页局部视觉整顿：AI 主焦点、平面分析分区、状态降噪与移动端动作布局",
+    "scope": "single-page",
+    "nav": "N3 side rail retained"
+  },
+  {
+    "date": "2026-08-15",
+    "macrostructure": "Focused account gate within research workbench",
+    "theme": "Midnight with restrained teal anchor",
+    "enrichment": "none",
+    "brief": "登录页复审：补齐邮箱与密码输入状态、修正直接文案、强化移动端按钮与焦点层级",
+    "scope": "component",
+    "nav": "N3 side rail hidden until authentication"
+  },
+  {
+    "date": "2026-08-13",
+    "macrostructure": "Binary market treemap within workbench",
+    "theme": "Midnight with A-share heat scale",
+    "enrichment": "none",
+    "brief": "A 股行业热力图升级为高对比矩形树图",
+    "scope": "component",
+    "nav": "N3 Side rail retained"
+  },
+  {
+    "date": "2026-08-12",
+    "macrostructure": "Market heatmap within workbench",
+    "theme": "Midnight",
+    "enrichment": "none",
+    "brief": "A 股行业板块改为 24 块实时强弱热力图",
+    "scope": "component",
+    "nav": "N3 Side rail retained"
+  },
+  {
+    "date": "2026-08-11",
+    "macrostructure": "Workbench",
+    "theme": "Midnight",
+    "enrichment": "none",
+    "brief": "股基罗盘私人股票与基金研究工作台",
+    "scope": "app",
+    "nav": "N3 Side rail adapted for app navigation"
+  }
+]
